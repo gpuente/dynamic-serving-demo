@@ -19,6 +19,10 @@ const app = express()
 
 app.use(useragent.express())
 app.use(noFavicon())
+app.use((req, res, next) => {
+  res.set('Vary', 'User-Agent')
+  next()
+})
 
 let isBuilt = false
 

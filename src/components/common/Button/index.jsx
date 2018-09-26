@@ -3,7 +3,7 @@ import styles from './styles.css';
 
 class Button extends React.Component {
   clickhandler = () => {
-    alert('This common button renders on all versions, no matter user device');
+    alert('This common button is rendered on all versions, no matter user device');
   }
 
   render() {
